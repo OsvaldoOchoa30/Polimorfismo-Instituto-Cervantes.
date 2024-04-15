@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1153.0" style="-fx-background-color: #D7CAB6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osvaldoochoa.polimorfismoc3.controllers.ActualizarEstudianteController">
+    <children>
+        <AnchorPane layoutX="78.0" layoutY="238.0" prefHeight="460.0" prefWidth="394.0" style="-fx-border-color: black; -fx-border-radius: 20; -fx-border-width: 9;">
+            <children>
+                <TextField fx:id="textFieldLastName" layoutX="30.0" layoutY="176.0" prefHeight="48.0" prefWidth="343.0" promptText="Ingrese Apellido:" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #A89A89; -fx-text-fill: white;">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="textFieldName" layoutX="32.0" layoutY="88.0" prefHeight="48.0" prefWidth="343.0" promptText="Ingrese Nombre:" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #A89A89; -fx-text-fill: white;">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="textFieldMatricula" layoutX="31.0" layoutY="261.0" prefHeight="48.0" prefWidth="343.0" promptText="Ingrese Matricula:" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #A89A89; -fx-text-fill: white;">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+      
+              <Button fx:id="buttonActualizar" layoutX="26.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedbuttonActualizar" prefHeight="48.0" prefWidth="343.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #786A5D;" text="Actualizar" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+            </children></AnchorPane>
+      <TableView fx:id="tableActualizar" layoutX="572.0" layoutY="240.0" prefHeight="456.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="tableColumnName" prefWidth="209.5999755859375" text="Nombre" />
+          <TableColumn fx:id="tableColumnLastN" prefWidth="177.60009765625" text="Apellido" />
+            <TableColumn fx:id="tableColoumnMatricula" prefWidth="159.2000732421875" text="Matricula" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idBuscador" layoutX="572.0" layoutY="184.0" prefHeight="44.0" prefWidth="400.0" promptText="Buscador" />
+      <Button fx:id="buttonBuscar" layoutX="1013.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedbuttonBuscar" prefHeight="43.0" prefWidth="100.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #786A5D;" text="Buscar" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Semibold" />
+         </font></Button>
+      <ImageView fitHeight="175.0" fitWidth="175.0" layoutX="485.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/editarp.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+    </children>
+</AnchorPane>

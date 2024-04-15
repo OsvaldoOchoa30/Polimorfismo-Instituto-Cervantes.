@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="503.0" style="-fx-background-color: #D7CAB6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osvaldoochoa.polimorfismoc3.controllers.GuardarEstudianteController">
+    <children>
+
+        <Button fx:id="buttonVer" layoutX="80.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedButtonVer" prefHeight="43.0" prefWidth="343.0" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #786A5D;" text="Guardar" textFill="WHITE">
+            <font>
+                <Font name="Yu Gothic UI Semibold" size="16.0" />
+            </font>
+        </Button>
+        <TextField fx:id="textFieldName" layoutX="80.0" layoutY="171.0" prefHeight="43.0" prefWidth="343.0" promptText="Ingrese el Nombre:" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #A89A89; -fx-text-fill: white;">
+            <font>
+                <Font size="16.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </TextField>
+        <TextField fx:id="textFieldLlastName" layoutX="80.0" layoutY="237.0" prefHeight="43.0" prefWidth="343.0" promptText="Ingrese el Apellido:" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #A89A89; -fx-text-fill: white;">
+            <font>
+                <Font size="16.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </TextField>
+        <TextField fx:id="textFieldMatricula" layoutX="80.0" layoutY="305.0" prefHeight="43.0" prefWidth="343.0" promptText="Ingrese Matricula:" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-background-color: #A89A89; -fx-text-fill: white;">
+            <font>
+                <Font size="16.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </TextField>
+      <ImageView fitHeight="120.0" fitWidth="118.0" layoutX="193.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagenes/nuevou.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect>
+      </ImageView>
+    </children>
+</AnchorPane>

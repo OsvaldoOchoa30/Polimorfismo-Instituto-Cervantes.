@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1429.0" style="-fx-background-color: #E6E6E6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.osvaldoochoa.polimorfismoc3.controllers.VerEstudiantesController">
+    <children>
+        <Label layoutX="739.0" layoutY="34.0" text="Estudiantes">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="verButton" layoutX="567.0" layoutY="606.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedVerButton" prefHeight="48.0" prefWidth="343.0" style="-fx-background-radius: 10; -fx-background-color: orange;" text="Ver" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableBDD1" layoutX="527.0" layoutY="219.0" prefHeight="350.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="tableColumnBDD1name" prefWidth="128.0" text="Nombre" />
+                <TableColumn fx:id="tableColumnBDD1LastN" prefWidth="145.0" text="Apellido" />
+                <TableColumn fx:id="tableColumnBDD1matricula" prefWidth="139.0" text="Matricula" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tableBDD2" layoutX="55.0" layoutY="219.0" prefHeight="350.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="tableColumnBDD2name" prefWidth="128.0" text="Nombre" />
+                <TableColumn fx:id="tableColumnBDD2LastN" prefWidth="145.0" text="Apellido" />
+                <TableColumn fx:id="tableColumnBDD2matricula" prefWidth="139.0" text="Matricula" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tableBDD3" layoutX="1012.0" layoutY="219.0" prefHeight="350.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="tableColumnBDD3name" prefWidth="128.0" text="Nombre" />
+                <TableColumn fx:id="tableColumnBDD3lastN" prefWidth="145.0" text="Apellido" />
+                <TableColumn fx:id="tableColumnBDD3matricula" prefWidth="139.0" text="Matricula" />
+            </columns>
+        </TableView>
+        <Label layoutX="209.0" layoutY="159.0" text="BDD1">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="677.0" layoutY="159.0" text="BDD2">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="1167.0" layoutY="159.0" text="BDD3">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="matriculaBuscarText" layoutX="60.0" layoutY="63.0" prefHeight="62.0" prefWidth="441.0" promptText="Ingrese la matricula del estudiante" style="-fx-background-radius: 15;">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>
